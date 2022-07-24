@@ -3,7 +3,6 @@ name = "migration tool"
 version = "0.0.4"
 description = "Migration tool."
 authors = [
-    {name = "alex-korzh", email = "alex@korzh.me"},
     {name = "Alex",email = "alex@korzh.me"}
 ]
 dependencies = ["asyncpg"]
