@@ -1,0 +1,23 @@
+[project]
+name = "migration tool"
+version = "0.0.4"
+description = "Migration tool."
+authors = [
+    {name = "alex-korzh", email = "alex@korzh.me"},
+    {name = "Alex",email = "alex@korzh.me"}
+]
+dependencies = ["asyncpg"]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+[project.urls]
+Homepage = ""
+[project.scripts]
+migrate = "migrate.migrate:run"
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
+
+[tool]
+[tool.pdm]
