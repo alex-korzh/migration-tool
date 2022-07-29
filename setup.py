@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='migration tool',
-    version='0.0.4',
+    version='0.0.5',
     author='Alex',
     author_email='alex@korzh.me',
     url='',
