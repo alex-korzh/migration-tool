@@ -1,6 +1,6 @@
 [project]
 name = "migration tool"
-version = "0.0.4"
+version = "0.0.5"
 description = "Migration tool."
 authors = [
     {name = "Alex",email = "alex@korzh.me"}
