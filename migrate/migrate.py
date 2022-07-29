@@ -34,6 +34,13 @@ class MigrationManager:
     def __init__(self):
         self.db_url = os.getenv("MIGRATE_DATABASE_URL", None)
         self.versions_uri = os.getenv("VERSIONS_URI", None)
+        self.__prepare_folder()
+
+    def __prepare_folder(self):
+        if os.path.isdir(self.versions_uri):
+            return
+
+        os.mkdir(self.versions_uri)
 
     async def __aenter__(self) -> "MigrationManager":
         self.conn = await asyncpg.connect(self.db_url)
